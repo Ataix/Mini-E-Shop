@@ -1,0 +1,8 @@
+{% extends 'base_product.html' %}
+{% block body %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Sign Up">
+    </form>
+{% endblock body %}
